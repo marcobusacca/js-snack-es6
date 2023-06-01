@@ -40,3 +40,7 @@ function fillArrayNumberSeat(arrayNumberSeat){
     // INSERISCO DENTRO L'ARRAY_NUMBER_SEAT CON I NUMERI RANDOM GENERATI E VALIDATI
     arrayNumberSeat.push(randomNumber);
 }
+
+
+// ARRAY CONTENENTE I NUMERI DEL POSTO DI OGNI INVITATO
+const arrayNumberSeat = [];
