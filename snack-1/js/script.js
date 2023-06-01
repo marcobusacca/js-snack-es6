@@ -44,3 +44,7 @@ function fillArrayNumberSeat(arrayNumberSeat){
 
 // ARRAY CONTENENTE I NUMERI DEL POSTO DI OGNI INVITATO
 const arrayNumberSeat = [];
+
+
+// ARRAY CONTENENTE I NOMI DEGLI INVITATI
+const guestArray = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin'];
