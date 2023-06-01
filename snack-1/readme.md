@@ -17,43 +17,9 @@ Generiamo e Stampiamo in Console la Lista per i Segnaposto.
 
 SOLUZIONE:
 
-- Creare una Funzione (generateRandomNumber(min, max)) che genera un Numero Random tra 100 e 999;
-
-    - Ritorna (return): Math.floor(Math.random() * (max - min + 1) + min);
-
-
-- Creare una Funzione (checkRandomNumber(arrayNumberSeat)) che controlla che non ci siano Numeri Random Rindondanti;
-
-    - Dichiarare una Variabile di Controllo (let checkNumber = false);
-
-    - Dichiarare una Variabile che Contiene il Numero Casuale (let randomNumber);
-
-    - Creare un CICLO WHILE che viene eseguito SOLTANTO SE checkNumber === false:
-
-        - Richiamare la Funzione generateRandomNumber(100, 999) ed inserirla dentro la Variabile randomNumber;
-
-        - ? SE arrayNumberSeat NON include il randomNumber, ALLORA:
-
-            - checkNumber = true;
-
-    - Ritorna (return) la Variabile randomNumber;
-
-
-- Creare una Funzione (fillArrayNumberSeat(arrayNumberSeat)) che riempe l'arrayNumberSeat con i Numeri Random Generati e Validati;
-
-    - Richiamare la Funzione checkRandomNumber(arrayNumberSeat) ed inserirla dentro una Variabile che Contiene il Numero Casuale (let randomNumber);
-
-    - Pushare dentro l'arrayNumberSeat il Numero Random Generato e Validato (arrayNumberSeat.push(randomNumber));
-
-
-- Dichiarare l'array che contiene i Numeri di Posto degli Invitati (const arrayNumberSeat = []);
-
 - Dichiarare l'array degli invitati (const guestArray);
 
-
 - Dichiarare il nuovo array (const newGuestArray) e usare la funzione guestArray.map(elem, index) con l'Arrow Function () => {}, per riempire il nuovo array:
-
-    - Richiamare la Funzione fillArrayNumberSeat();
 
     - Creare un nuovo Oggetto per ogni iterazione ed inserirlo in una Variabile (guestObject):
 
@@ -63,7 +29,7 @@ SOLUZIONE:
 
            'guestName' : elem,
 
-           'guestSeat' : arrayNumberSeat[index]
+           'guestSeat' : index + 1 * 100
         }
 
     - Ritorna (return) la Variabile guestObject;
