@@ -51,7 +51,7 @@ SOLUZIONE:
 - Dichiarare l'array degli invitati (const guestArray);
 
 
-- Dichiarare il nuovo array (const newGuestArray) e usare la funzione guestArray.map(elem) con l'Arrow Function () => {}, per riempire il nuovo array:
+- Dichiarare il nuovo array (const newGuestArray) e usare la funzione guestArray.map(elem, index) con l'Arrow Function () => {}, per riempire il nuovo array:
 
     - Richiamare la Funzione fillArrayNumberSeat();
 
@@ -59,11 +59,11 @@ SOLUZIONE:
 
         - {
 
-           'tableName' = 'Tavolo Vip',
+           'tableName' : 'Tavolo Vip',
 
-           'guestName' = elem,
+           'guestName' : elem,
 
-           'guestSeat' = arrayNumberSeat[elem]
+           'guestSeat' : arrayNumberSeat[index]
         }
 
     - Ritorna (return) la Variabile guestObject;
