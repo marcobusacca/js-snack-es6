@@ -22,10 +22,21 @@ function checkRandomNumber(arrayNumberSeat){
         randomNumber = generateRandomNumber(100, 999);
 
         if(!arrayNumberSeat.includes(randomNumber)){ // CONTROLLO CHE IL NUMERO RANDOM GENERATO NON SIA RINDONDANTE
-            
+
             checkNumber = true;
         }
     }
 
     return randomNumber;
+}
+
+
+// FUNZIONE CHE RIEMPE L'ARRAY_NUMBER_SEAT CON I NUMERI RANDOM GENERATI E VALIDATI
+function fillArrayNumberSeat(arrayNumberSeat){
+
+    // RICHIAMO LA FUNZIONE CHE GENERA E CONTROLLA I NUMERI RANDOM
+    let randomNumber = checkRandomNumber(arrayNumberSeat);
+
+    // INSERISCO DENTRO L'ARRAY_NUMBER_SEAT CON I NUMERI RANDOM GENERATI E VALIDATI
+    arrayNumberSeat.push(randomNumber);
 }
