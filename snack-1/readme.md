@@ -30,6 +30,7 @@ SOLUZIONE:
            'guestName' : elem,
 
            'guestSeat' : index + 1 * 100
+           
         }
 
     - Ritorna (return) la Variabile guestObject;
