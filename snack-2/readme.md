@@ -67,5 +67,3 @@ SOLUZIONE 3:
             - return true;
 
     - Stampa in Console il Nuovo Array.
-
-
