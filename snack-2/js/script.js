@@ -66,3 +66,19 @@ let studentsListArray = [
         'grades' : '84',
     }
 ];
+
+// PARTE 1
+
+    const newArray_1 = studentsListArray.map((elem) => {
+
+        // RECUPERO LA PROPRIETA' "NAME" DI OGNI OGGETTO DI STUDENTS_LIST_ARRAY E LA TRASFORMO IN MAIUSCOLO
+        let studentsName = elem.name.toUpperCase();
+
+        // INSERISCO STUDENTS_NAME DENTRO NEW_ARRAY_1
+        return studentsName;
+    })
+
+    // STAMPO IN CONSOLE LA LISTA CONTENENTE I NOMI IN MAIUSCOLO
+    console.log("PARTE 1",
+    newArray_1
+    );
