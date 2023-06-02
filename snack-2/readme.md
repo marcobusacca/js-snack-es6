@@ -10,7 +10,7 @@ Abbiamo un Elenco degli Studenti di una Facoltà, Identificati da ID, NOME e SOM
 
 
 Questo è l'Elenco degli Studenti:
-```
+
 Id          Name                        Grades
 213         Marco della Rovere          78
 110         Paola Cortellessa           96
