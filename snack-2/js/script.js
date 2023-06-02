@@ -102,3 +102,26 @@ let studentsListArray = [
     console.log("PARTE 2",
     newArray_2
     );
+
+
+    
+// PARTE 3
+
+    const newArray_3 = studentsListArray.filter((elem) =>{
+
+        // RECUPERO LA PROPRIETA' "GRADES" DI OGNI OGGETTO DI STUDENTS_LIST_ARRAY
+        let studentsGrades = elem.grades;
+
+        // RECUPERO LA PROPRIETA' "ID" DI OGNI OGGETTO DI STUDENTS_LIST_ARRAY
+        let studentsId = elem.id;
+
+        // INSERISCO DENTRO IL NUOVO ARRAY SOLTANTO GLI STUDENTI CHE HANNO UN TOTALE DI VOTI SUPERIORE A 70 E ID SUPERIORE A 120
+        if (studentsGrades > 70 && studentsId > 120){
+            return true;
+        }
+    })
+
+    // STAMPO IN CONSOLE LA LISTA DI TUTTI GLI STUDENTI CHE HANNO UN TOTALE DI VOTI SUPERIORE A 70 E ID SUPERIORE A 120
+    console.log("PARTE 3",
+    newArray_3
+    );
