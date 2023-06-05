@@ -56,4 +56,9 @@ const squadreArray = [
     }
 ];
 
-console.log(squadreArray)
+// CICLO MAP CHE ESTRAPOLA LE PROPRIETA' "NOME" E "FALLI_SUBITI" E LE INSERISCE IN UN NUOVO ARRAY DI OGGETTI
+const newSquadreArray = squadreArray.map(({nome, falliSubiti}) => {
+
+    // INSERISCO DENTRO IL NUOVO ARRAY LE DUE PROPRIETA'
+    return {nome, falliSubiti};
+})
