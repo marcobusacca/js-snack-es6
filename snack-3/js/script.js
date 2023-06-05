@@ -32,3 +32,6 @@ const racingBikeArray = [
         'weight' : 5                // PESO ESPRESSO IN KG
     }
 ];
+
+// VARIABILE CHE CONTERRA' L'OGGETTO CON IL PESO MINORE
+let pesoMinore = racingBikeArray[0];
