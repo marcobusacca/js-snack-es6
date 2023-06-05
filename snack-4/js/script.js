@@ -7,7 +7,7 @@ function generateRandomNumber(min, max){
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-
+// DICHIARO L'ARRAY CONTENENTE LE SQUADRE DI CALCIO CON LE VARIE PROPRIETA'
 const squadreArray = [
 
     {
@@ -56,9 +56,15 @@ const squadreArray = [
     }
 ];
 
+// STAMPO IN CONSOLE L'ARRAY
+console.log(squadreArray);
+
 // CICLO MAP CHE ESTRAPOLA LE PROPRIETA' "NOME" E "FALLI_SUBITI" E LE INSERISCE IN UN NUOVO ARRAY DI OGGETTI
 const newSquadreArray = squadreArray.map(({nome, falliSubiti}) => {
 
     // INSERISCO DENTRO IL NUOVO ARRAY LE DUE PROPRIETA'
     return {nome, falliSubiti};
 })
+
+// STAMPO IN CONSOLE IL NUOVO ARRAY
+console.log(newSquadreArray);
